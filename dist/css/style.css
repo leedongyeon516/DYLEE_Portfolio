@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #444;
+  overflow-x: hidden;
+}
+
+#main,
+.about,
+.projects,
+.blog {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li,
+li a,
+a {
+  color: #f4f4f4;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu-btn {
+  color: #f4f4f4;
+  display: flex;
+  position: fixed;
+  z-index: 102;
+  left: 40px;
+  top: 30px;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+
+.menu-btn.close {
+  color: black;
+}
+
+.menu-btn .menu-btn-line {
+  font-size: 0.8rem;
+  letter-spacing: 0.6rem;
+  width: 15px;
+  height: 15px;
+  background: gold;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-btn-line span {
+  color: black;
+}
+
+.menu-btn.close {
+  transform: rotate(90deg);
+}
+
+.menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  opacity: 0.9;
+  z-index: 101;
+}
+
+.menu.show {
+  visibility: visible;
+}
+
+.menu-nav {
+  text-transform: uppercase;
+  line-height: 4rem;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100vh;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: all 0.8s ease-in-out;
+}
+
+.menu-nav.show {
+  transform: translateX(0);
+}
+
+.nav-item::before {
+  content: "";
+  top: 0;
+  width: 5px;
+  height: 100%;
+  border-top: 10px solid black;
+  transform: scaleY(7);
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+}
+
+.nav-item:hover::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.menu .nav-item {
+  transition: all 1s ease-in-out;
+}
+
+.menu .nav-item.show {
+  transform: translateX(0);
+}
+
+.menu .nav-link {
+  font-family: "Cinzel", serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
+  color: black;
+}
+
+.menu-showcase {
+  background: transparent;
+  width: 70%;
+  height: 100vh;
+}
+
+.underlay {
+  background: black;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.main {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  top: 70%;
+  left: 60%;
+  position: absolute;
+}
+
+/**/
+.txt-type > .txt {
+  border-right: 0.2rem solid #f4f4f4;
+}
+
+.about {
+  background: black;
+  width: 100%;
+  height: 300vh;
+  display: flex;
+}
+
+.about-title {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  width: 40%;
+  height: 100vh;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-pages {
+  width: 60%;
+}
+
+.about-pages div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.about-pages div > h2 {
+  font-family: "Permanent Marker", cursive;
+}
+
+.about-pages div > p {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.125rem;
+  line-height: 1.5rem;
+  width: 75%;
+}
+
+.about-pages div:first-child {
+  background-color: #f4f4f4;
+}
+.about-pages div:nth-child(2) {
+  background-color: #f4f4f4;
+}
+.about-pages div:nth-child(3) {
+  background-color: #f4f4f4;
+}
+
+.projects {
+  color: black;
+  background: white;
+  height: 100%;
+  overflow: auto;
+  padding: 7rem 2rem;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projects h4 {
+  font-family: "Permanent Marker", cursive;
+}
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
+  text-transform: uppercase;
+  padding-bottom: 100px;
+}
+
+.card {
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.card img {
+  width: 45%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.content {
+  font-family: "Cinzel", serif;
+  width: 55%;
+  border: black 1px solid;
+  padding: 40px;
+}
+
+.content h3 {
+  font-family: "Permanent Marker", cursive;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 0.85rem;
+}
+
+.btn {
+  color: black;
+  border: black 1px solid;
+  margin-right: 20px;
+  padding: 0.25rem 0.75rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+  background: black;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-modified {
+  color: white;
+  border: white 1px solid;
+}
+
+.btn-modified:hover {
+  color: black;
+  background: white;
+}
+
+/**/
+.blog {
+  font-size: 18px;
+  line-height: 1;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 85vh;
+}
+
+.loader {
+  display: flex;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+.loader > span {
+  display: inline-block;
+  background-color: black;
+  width: 11px;
+  height: 11px;
+  margin: 0 7px;
+  transform: translate3d(0);
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loader > span:nth-child(2) {
+  background-color: black;
+  animation-delay: 0.2s;
+}
+
+.loader > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.message {
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.message h2 {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  margin-right: -0.2rem;
+  color: #111;
+}
+
+@keyframes bounce {
+  to {
+    width: 11px;
+    height: 11px;
+    transform: translate3d(0, -11px, 0);
+  }
+}
+
+.contact {
+  height: calc(100vh - 41px);
+  color: white;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.2s ease-in-out;
+}
+
+.contact.color-active {
+  background: black;
+  transition: all 1.2s ease-in-out;
+}
+
+.contact p {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
+  padding-right: 50px;
+}
+
+.contact p > span {
+  color: gold;
+}
+
+.contact a {
+  font-family: "Cinzel", serif;
+}
+
+/**/
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.15rem;
+  margin-right: -0.15rem;
+  color: black;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 15px;
+  flex-shrink: 0;
+}
