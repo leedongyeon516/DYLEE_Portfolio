@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 li,
@@ -28,7 +29,7 @@ a {
 }
 
 .menu-btn {
-  color: #f4f4f4;
+  color: darkgray;
   display: flex;
   position: fixed;
   z-index: 102;
@@ -39,7 +40,7 @@ a {
 }
 
 .menu-btn.close {
-  color: black;
+  color: #555;
 }
 
 .menu-btn .menu-btn-line {
@@ -178,6 +179,7 @@ a {
 
 .about-title {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
   letter-spacing: 0.5rem;
   margin-right: -0.5rem;
   text-transform: uppercase;
@@ -263,6 +265,10 @@ a {
   padding: 40px;
 }
 
+.gray-txt {
+  color: #999;
+}
+
 .content h3 {
   font-family: "Permanent Marker", cursive;
   text-transform: uppercase;
@@ -275,7 +281,6 @@ a {
 .btn {
   color: black;
   border: black 1px solid;
-  margin-right: 20px;
   padding: 0.25rem 0.75rem;
   transition: all 0.4s ease-in-out;
 }
@@ -296,7 +301,11 @@ a {
   background: white;
 }
 
-/**/
+.space {
+  margin-right: 20px;
+}
+
+/*
 .blog {
   font-size: 18px;
   line-height: 1;
@@ -351,10 +360,10 @@ a {
     height: 11px;
     transform: translate3d(0, -11px, 0);
   }
-}
+}*/
 
 .contact {
-  height: calc(100vh - 41px);
+  height: calc(100vh - 71px);
   color: white;
   background: white;
   display: flex;
@@ -368,15 +377,15 @@ a {
   transition: all 1.2s ease-in-out;
 }
 
+.dot {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .contact p {
   font-size: 1rem;
   letter-spacing: 0.5rem;
   margin-right: -0.5rem;
   padding-right: 50px;
-}
-
-.contact p > span {
-  color: gold;
 }
 
 .contact a {
@@ -389,9 +398,139 @@ footer {
   font-size: 0.6rem;
   letter-spacing: 0.15rem;
   margin-right: -0.15rem;
-  color: black;
-  background: #f4f4f4;
-  text-align: center;
-  padding: 15px;
-  flex-shrink: 0;
+  color: #f4f4f4;
+  background: black;
+  padding: 30px 0;
+  padding-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-height: 325px) {
+  .contact p {
+    font-size: 0.5rem;
+  }
+}
+
+/**/
+@media only screen and (max-width: 480px) {
+  .menu-nav,
+  .menu-showcase {
+    width: 50%;
+  }
+
+  .menu-btn {
+    top: 25px;
+    left: 25px;
+  }
+
+  .menu-btn-line {
+    font-size: 0.2rem;
+  }
+
+  .nav-item {
+    font-size: 0.5rem;
+    line-height: 3rem;
+  }
+
+  .headline {
+    display: none;
+  }
+
+  .about-title {
+    font-size: 0.7rem;
+    padding-left: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card img,
+  .content {
+    width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact p {
+    letter-spacing: 0.25rem;
+    margin-right: -0.25rem;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .buttons {
+    margin-top: 30px;
+  }
+
+  footer {
+    padding: 30px 0;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 850px) {
+  .menu-nav,
+  .menu-showcase {
+    width: 50%;
+  }
+
+  .nav-item {
+    line-height: 2rem;
+  }
+
+  .headline {
+    font-size: 0.8rem;
+    left: 50%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card img,
+  .content {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    margin: 8px;
+    padding: 0.1rem 0.5rem;
+  }
+
+  .contact p {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  footer {
+    padding: 30px 0;
+    justify-content: center;
+  }
+}
+
+/* Media Query for iPad */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .nav-item {
+    line-height: 3.5rem;
+  }
+
+  .headline {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+  .nav-item {
+    line-height: 3rem;
+  }
 }

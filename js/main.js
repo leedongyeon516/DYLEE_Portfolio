@@ -14,6 +14,7 @@ $(".menu a").on("click", function(e) {
   }
 });*/
 
+/*
 const TypeWriter = function(txtElement, words, wait = 3000) {
   this.txtElement = txtElement;
   this.words = words;
@@ -61,7 +62,7 @@ function init() {
   const wait = txtElement.getAttribute("data-wait");
 
   new typeWriter(txtElement, words, wait);
-}
+}*/
 
 function splitScroll() {
   const controller = new ScrollMagic.Controller();
@@ -77,6 +78,7 @@ function splitScroll() {
 
 splitScroll();
 
+/*
 const loader = document.querySelector(".loader");
 const message = document.querySelector(".message");
 
@@ -89,19 +91,22 @@ function init() {
   }, 1000);
 }
 
-init();
+init();*/
 
 const contactSection = document.querySelector(".contact");
+const goldTxt = document.querySelector(".gold");
 
-function changeBgColor() {
-  if (this.scrollY > this.innerHeight * 6.2) {
+function changeColor() {
+  if (this.scrollY > this.innerHeight * 5) {
     contactSection.classList.add("color-active");
+    goldTxt.style.color = "gold";
   } else {
     contactSection.classList.remove("color-active");
+    goldTxt.style.color = "white";
   }
 }
 
-window.addEventListener("scroll", changeBgColor);
+window.addEventListener("scroll", changeColor);
 
 //
 const main = document.querySelector(".main");
