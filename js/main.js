@@ -64,6 +64,12 @@ function init() {
   new typeWriter(txtElement, words, wait);
 }*/
 
+const notice = document.querySelector(".notice");
+
+setTimeout(() => {
+  notice.style.display = "block";
+}, 2000);
+
 function splitScroll() {
   const controller = new ScrollMagic.Controller();
 
