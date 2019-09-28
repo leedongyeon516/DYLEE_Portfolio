@@ -210,7 +210,7 @@ a {
 }
 
 .about-title {
-  font-family: "Permanent Marker", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.5rem;
   margin-right: -0.5rem;
@@ -219,9 +219,8 @@ a {
   width: 40%;
   height: 100vh;
   margin: 0 !important;
-  padding-right: 45px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -467,8 +466,12 @@ footer {
   }
 
   .about-title {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding-left: 20px;
+  }
+
+  .about-pages > div {
+    padding-right: 10px;
   }
 
   .card {
@@ -514,6 +517,10 @@ footer {
   .headline {
     font-size: 0.8rem;
     left: 50%;
+  }
+
+  .about-title {
+    font-size: 0.6rem;
   }
 
   .card {
