@@ -100,15 +100,15 @@ function init() {
 init();*/
 
 const contactSection = document.querySelector(".contact");
-const goldTxt = document.querySelector(".gold");
+const colorTxt = document.querySelector(".color-txt");
 
 function changeColor() {
   if (this.scrollY > this.innerHeight * 5) {
     contactSection.classList.add("color-active");
-    goldTxt.style.color = "gold";
+    colorTxt.style.color = "#888";
   } else {
     contactSection.classList.remove("color-active");
-    goldTxt.style.color = "white";
+    colorTxt.style.color = "white";
   }
 }
 

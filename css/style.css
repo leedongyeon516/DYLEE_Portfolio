@@ -96,10 +96,11 @@ a {
 .nav-item::before {
   content: "";
   top: 0;
+  left: -10px;
   width: 5px;
   height: 100%;
   border-top: 10px solid black;
-  transform: scaleY(7);
+  transform: scaleY(9);
   opacity: 0;
   transition: 0.5s;
   position: absolute;
@@ -179,7 +180,7 @@ a {
 }
 
 .notice span {
-  animation: blink 2s linear infinite;
+  animation: blink 1.5s linear infinite;
 }
 
 @keyframes blink {
@@ -276,17 +277,24 @@ a {
 .card {
   padding-bottom: 50px;
   display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 45vw;
+  height: inherit;
 }
 
 .card img {
-  width: 45%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .content {
   font-family: "Cinzel", serif;
-  width: 55%;
+  width: 50vw;
+  height: inherit;
   border: black 1px solid;
   padding: 40px;
 }
@@ -395,12 +403,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1.2s ease-in-out;
+  transition: all 2.5s ease-in-out;
 }
 
 .contact.color-active {
   background: black;
-  transition: all 1.2s ease-in-out;
+  transition: all 2.5s ease-in-out;
 }
 
 .dot {
@@ -428,9 +436,8 @@ footer {
   color: #f4f4f4;
   background: black;
   padding: 30px 0;
-  padding-right: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 @media only screen and (max-height: 325px) {
@@ -481,9 +488,14 @@ footer {
     flex-direction: column;
   }
 
-  .card img,
+  .image {
+    width: 95vw;
+    height: 30%;
+  }
+
   .content {
-    width: 100%;
+    width: 95vw;
+    height: 45%;
   }
 
   .contact {
@@ -499,11 +511,6 @@ footer {
 
   .buttons {
     margin-top: 30px;
-  }
-
-  footer {
-    padding: 30px 0;
-    justify-content: center;
   }
 }
 
@@ -530,9 +537,14 @@ footer {
     flex-direction: column;
   }
 
-  .card img,
+  .image {
+    width: 90vw;
+    height: 80%;
+  }
+
   .content {
-    width: 100%;
+    width: 90vw;
+    height: 80%;
   }
 
   .buttons {
@@ -553,11 +565,6 @@ footer {
   .contact p {
     padding-left: 5px;
     padding-right: 10px;
-  }
-
-  footer {
-    padding: 30px 0;
-    justify-content: center;
   }
 }
 
