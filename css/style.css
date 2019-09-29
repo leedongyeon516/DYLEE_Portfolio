@@ -473,6 +473,10 @@ footer {
     padding-left: 20px;
   }
 
+  .about-pages > div {
+    padding-left: 20px;
+  }
+
   .card {
     flex-direction: column;
   }
