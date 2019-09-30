@@ -12,6 +12,9 @@ const navItem4 = document.querySelector(".nav-item-4");
 const blog = document.querySelector(".nav-item-4");
 const navItem5 = document.querySelector(".nav-item-5");
 let showMenu = false;
+//
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".close-btn");
 
 //
 menuBtn.addEventListener("click", toggleMenu);
@@ -50,5 +53,15 @@ home.addEventListener("click", () => {
 });
 
 blog.addEventListener("click", () => {
-  window.location.reload();
+  modal.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
 });
