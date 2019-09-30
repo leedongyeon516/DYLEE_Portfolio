@@ -595,6 +595,14 @@ footer {
 }
 
 @media all and (min-height: 1025px) and (orientation: portrait) {
+  .menu-nav {
+    width: 30%;
+  }
+
+  .menu-showcase {
+    width: 70%;
+  }
+
   .nav-item {
     line-height: 5rem;
   }
