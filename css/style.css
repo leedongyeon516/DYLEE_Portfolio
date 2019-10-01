@@ -459,7 +459,8 @@ a {
 
 .close-btn {
   font-family: "Permanent Marker", cursive;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.4rem;
+  margin-right: -0.4rem;
   opacity: 0.5;
   float: right;
 }
