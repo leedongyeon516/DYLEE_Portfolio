@@ -68,13 +68,13 @@ const notice = document.querySelector(".notice");
 
 setTimeout(() => {
   notice.style.display = "block";
-}, 2000);
+}, 2250);
 
 function splitScroll() {
   const controller = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
-    duration: "200%",
+    duration: "300%",
     triggerElement: ".about-title",
     triggerHook: 0
   })
