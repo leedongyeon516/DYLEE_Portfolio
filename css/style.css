@@ -345,6 +345,10 @@ a {
   background: white;
 }
 
+.btn-disabled {
+  opacity: 0.25;
+}
+
 .space {
   margin-right: 20px;
 }
