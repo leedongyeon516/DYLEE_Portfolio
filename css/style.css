@@ -259,6 +259,11 @@ a {
   width: 75%;
 }
 
+.me {
+  opacity: 0.75;
+  transition: all 1s ease-in-out;
+}
+
 .projects {
   color: black;
   background: white;
@@ -459,15 +464,16 @@ a {
 }
 
 .close-btn {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Cinzel", serif;
+  font-size: 0.9rem;
   letter-spacing: 0.25rem;
   margin-right: -0.25rem;
-  opacity: 0.5;
+  color: orange;
   float: right;
 }
 
 .close-btn:hover {
-  opacity: 1;
+  color: black;
   cursor: pointer;
 }
 

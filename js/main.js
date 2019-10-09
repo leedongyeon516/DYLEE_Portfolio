@@ -118,6 +118,8 @@ window.addEventListener("scroll", changeColor);
 const main = document.querySelector(".main");
 const underlay = document.querySelector(".underlay");
 const headline = document.querySelector(".headline");
+const about = document.querySelector(".nav-item-2");
+const me = document.querySelector(".me");
 
 const t1 = new TimelineMax();
 
@@ -142,3 +144,7 @@ t1.fromTo(main, 1, { height: "0%" }, { height: "90%", ease: Power2.easeInOut })
     { x: "0%", ease: Power2.easeInOut },
     "-=1.5"
   );
+
+about.addEventListener("click", () => {
+  me.style.opacity = "1";
+});
