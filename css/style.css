@@ -259,8 +259,8 @@ a {
   width: 75%;
 }
 
-.me {
-  opacity: 0.75;
+.me.effect {
+  animation: blink 1s linear;
   transition: all 1s ease-in-out;
 }
 
@@ -419,12 +419,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 2.25s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .contact.color-active {
   background: black;
-  transition: all 2s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .color-txt,
@@ -458,7 +458,7 @@ a {
 
 .modal-content {
   background-color: #f4f4f4;
-  width: 70%;
+  width: 50%;
   margin: 20% auto;
   padding: 70px 50px;
 }
@@ -468,7 +468,7 @@ a {
   font-size: 0.9rem;
   letter-spacing: 0.25rem;
   margin-right: -0.25rem;
-  color: orange;
+  color: darkorange;
   float: right;
 }
 
@@ -548,6 +548,10 @@ footer {
     height: 30%;
   }
 
+  .modal-content {
+    width: 70%;
+  }
+
   .content {
     width: 95vw;
     height: 45%;
@@ -595,6 +599,10 @@ footer {
   .image {
     width: 90vw;
     height: 80%;
+  }
+
+  .modal-content {
+    width: 70%;
   }
 
   .content {

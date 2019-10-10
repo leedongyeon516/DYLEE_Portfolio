@@ -146,5 +146,9 @@ t1.fromTo(main, 1, { height: "0%" }, { height: "90%", ease: Power2.easeInOut })
   );
 
 about.addEventListener("click", () => {
-  me.style.opacity = "1";
+  me.classList.add("effect");
+
+  setTimeout(() => {
+    me.classList.remove("effect");
+  }, 1000);
 });
