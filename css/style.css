@@ -325,6 +325,7 @@ a {
 }
 
 .btn {
+  text-align: center;
   color: black;
   border: black 1px solid;
   padding: 0.25rem 0.75rem;
