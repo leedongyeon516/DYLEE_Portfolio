@@ -336,8 +336,9 @@ a {
 }
 
 .btn-modified {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
   text-transform: uppercase;
   border: none;
   animation: blink 4s linear infinite;
@@ -507,7 +508,7 @@ footer {
   .contact p {
     letter-spacing: 0.25rem;
     margin-right: -0.25rem;
-    text-align: center;
+    text-align: left;
     padding-left: 15px;
   }
 
