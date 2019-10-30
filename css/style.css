@@ -140,11 +140,15 @@ a {
   height: 90vh;
   margin: 2.5rem;
   border: black solid 2.5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
   text-align: center;
+}
+
+.align {
+  transform: translateY(40vh);
+}
+
+.align span {
+  padding: 0.25rem;
 }
 
 .main img {
@@ -337,10 +341,8 @@ a {
 
 .btn-modified {
   font-size: 0.9rem;
-  letter-spacing: 0.5rem;
-  margin-right: -0.5rem;
   text-transform: uppercase;
-  border: none;
+  border-bottom: black solid 1px;
   animation: blink 4s linear infinite;
 }
 
