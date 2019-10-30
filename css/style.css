@@ -135,7 +135,7 @@ a {
 
 .main {
   font-family: "Cinzel", serif;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   width: 75vw;
   height: 90vh;
   margin: 2.5rem;
@@ -337,7 +337,7 @@ a {
 
 .btn-modified {
   font-size: 1.25rem;
-  font-weight: bold;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   border: none;
   animation: blink 4s linear infinite;
