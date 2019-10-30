@@ -135,10 +135,11 @@ a {
 
 .main {
   font-family: "Cinzel", serif;
+  font-size: 0.75rem;
   width: 75vw;
   height: 90vh;
   margin: 2.5rem;
-  border: black solid 5px;
+  border: black solid 2.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,8 +336,7 @@ a {
 }
 
 .btn-modified {
-  font-family: "Shadows Into Light", cursive;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
@@ -344,7 +344,7 @@ a {
 }
 
 .btn-modified:hover {
-  color: gold;
+  color: black;
   background: white;
 }
 
@@ -507,7 +507,7 @@ footer {
   .contact p {
     letter-spacing: 0.25rem;
     margin-right: -0.25rem;
-    text-align: left;
+    text-align: center;
     padding-left: 15px;
   }
 
